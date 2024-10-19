@@ -6,7 +6,10 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
+    #Establish a variable for over sized properties
     overSizeCharge = 0
+
+    #Display Welcome message
     print("Landscape Caclulator")
 
     #prompt user for address
@@ -19,7 +22,7 @@ def main():
     squareFeet = depth * width
 
     #add an oversize charge if the lanscape is over 5000 square feet
-    if squareFeet == squareFeet > 5000:
+    if squareFeet > 5000:
         overSizeCharge = 500
     
     #prompt user for grass type
@@ -42,8 +45,7 @@ def main():
     #caluclate the final cost then display that to the user
     finalCost = overSizeCharge + grassCharge + treeCharge + 1000
 
-    print("\nTotal Cost for house {0} is: ${1:.2f}".format(address,finalCost))
+    print("\nTotal cost for house {0} is: ${1:.2f}".format(address,finalCost))
 
-    # YOUR CODE ENDS HERE
 
 main()

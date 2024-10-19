@@ -6,8 +6,11 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
-    #Establish a variable for over sized properties
+    #Establish a variable for over sized properties and grass charges
     overSizeCharge = 0
+    fescueCharge = 0.05
+    bentgrassCharge = 0.02
+    campusCharge = 0.01
 
     #Display Welcome message
     print("Landscape Caclulator")
@@ -30,11 +33,11 @@ def main():
 
     #establish the charge for each grass type
     if grassType == "fescue":
-        grassCharge =  squareFeet * 0.05
+        grassCharge =  squareFeet * fescueCharge
     elif grassType == "bentgrass":
-        grassCharge = squareFeet * 0.02
+        grassCharge = squareFeet * bentgrassCharge
     elif grassType == "campus":
-        grassCharge = squareFeet * 0.01
+        grassCharge = squareFeet * campusCharge
 
     #prompt user for the amount of trees then calculate the total tree charge
 
